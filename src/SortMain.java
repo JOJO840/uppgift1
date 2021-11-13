@@ -1,6 +1,5 @@
-public class Main {
-
+public class SortMain {
     public static void main(String[] args) {
-	// write your code here
+
     }
 }

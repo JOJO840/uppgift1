@@ -1,2 +1,7 @@
-package PACKAGE_NAME;public class Sorter {
+public class Sorter {
+
+    public static void main(String[] args) {
+        System.out.println("Hej");
+
+    }
 }
