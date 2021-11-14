@@ -7,9 +7,15 @@ public class SortMain {
 
         for (int i = 0; i < args.length; i++) {
             nyLista[i] = Integer.parseInt(args[i]);
-            System.out.println(nyLista[i]);
-
         }
+            //  gör en instans av klassen Sorter
+        Sorter sorter = new Sorter();
+
+            // returnerar en lista till klassen
+       int[] SortList = sorter.sort(nyLista);
+
+
+
 
     }
 
