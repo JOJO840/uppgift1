@@ -14,7 +14,9 @@ public class SortMain {
             // returnerar en lista till klassen
        int[] sortList = sorter.sort(nyLista);
 
+
         for (int i = 0; i < sortList.length; i++) {
+            System.out.println(sortList[i]); // printar sort listan kolla om det funkar.
 
         }
 
