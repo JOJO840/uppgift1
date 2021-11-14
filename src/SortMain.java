@@ -12,9 +12,15 @@ public class SortMain {
         Sorter sorter = new Sorter();
 
             // returnerar en lista till klassen
-       int[] SortList = sorter.sort(nyLista);
+       int[] sortList = sorter.sort(nyLista);
 
-       // testar git
+        for (int i = 0; i < sortList.length; i++) {
+
+        }
+
+
+
+
 
 
 
