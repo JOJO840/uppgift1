@@ -14,6 +14,8 @@ public class SortMain {
             // returnerar en lista till klassen
        int[] SortList = sorter.sort(nyLista);
 
+       // testar git
+
 
 
 
