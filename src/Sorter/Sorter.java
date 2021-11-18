@@ -1,3 +1,5 @@
+package Sorter;
+
 import java.util.Arrays;
 
 public class Sorter{
@@ -7,6 +9,7 @@ public class Sorter{
         Arrays.sort(nyLista);
         return nyLista;
     }
+
 }
 
 
