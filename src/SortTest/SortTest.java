@@ -25,7 +25,23 @@ public class SortTest {
     }
 
     private static void testSorterEmptyArrayList(Sorter sorter, int[] emptyArrayList) {
-
+        //Expected Results = {};
+        int[] expected5 = {};
+        int[] result5 = sorter.sort(emptyArrayList);
+        System.out.println("Initialising Test Nr 5");
+        for (int j : result5) {
+            System.out.print(j + ", ");
+        }
+        System.out.println("");
+        for (int x : expected5) {
+            System.out.print(x + ", ");
+        }
+        System.out.println("");
+        if(Arrays.equals(result5,expected5)){
+            System.out.println("OK");
+        } else {
+            System.out.println("Error expected arraylist " + Arrays.toString(expected5) + " " + "You got " + Arrays.toString(result5));
+        }
     }
 
     private static void testSorterWithOneElementZero(Sorter sorter, int[] listWithOneElementZero) {
