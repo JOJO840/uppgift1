@@ -17,8 +17,35 @@ public class SortTest {
         int[] listWithSameElements = {-1,-1,-1,-1,-1};
         testSorterWithSameElements(sorter, listWithSameElements);
 
-        //int[] listWithOneElement = {0};
-        //testSorterWithSameElements(sorter, listWithSameElements);
+        int[] listWithOneElementZero = {0};
+        testSorterWithOneElementZero(sorter, listWithOneElementZero);
+
+        int[] emptyArrayList = {};
+        testSorterEmptyArrayList(sorter, emptyArrayList);
+    }
+
+    private static void testSorterEmptyArrayList(Sorter sorter, int[] emptyArrayList) {
+
+    }
+
+    private static void testSorterWithOneElementZero(Sorter sorter, int[] listWithOneElementZero) {
+        //Expected Results = {0};
+        int[] expected4 = {0};
+        int[] result4 = sorter.sort(listWithOneElementZero);
+        System.out.println("Initialising Test Nr 4");
+        for (int j : result4) {
+            System.out.print(j + ", ");
+        }
+        System.out.println("");
+        for (int x : expected4) {
+            System.out.print(x + ", ");
+        }
+        System.out.println("");
+        if(Arrays.equals(result4,expected4)){
+            System.out.println("OK");
+        } else {
+            System.out.println("Error expected arraylist " + Arrays.toString(expected4) + " " + "You got " + Arrays.toString(result4));
+        }
     }
 
     private static void testSorterWithSameElements(Sorter sorter, int[] listWithSameElements) {
