@@ -16,18 +16,22 @@ public class SortTest {
 
         int[] listWithSameElements = {-1,-1,-1,-1,-1};
         testSorterWithSameElements(sorter, listWithSameElements);
+
+        //int[] listWithOneElement = {0};
+        //testSorterWithSameElements(sorter, listWithSameElements);
     }
 
     private static void testSorterWithSameElements(Sorter sorter, int[] listWithSameElements) {
             //Expected Results = {-1,-1,-1,-1,-1};
         int[] expected3 = {-1,-1,-1,-1,-1};
         int[] result3 = sorter.sort(listWithSameElements);
+        System.out.println("Initialising Test Nr 3");
         for (int j : result3) {
             System.out.print(j + ", ");
         }
         System.out.println("");
         for (int x : expected3) {
-            System.out.println(x + ", ");
+            System.out.print(x + ", ");
         }
         System.out.println("");
         if(Arrays.equals(result3,expected3)){
@@ -41,6 +45,7 @@ public class SortTest {
         //Expected result = {-98, -5, 0, 4, 6, 222};
         int[] expected2 = {-98, -5, 0, 4, 6, 222};
         int[] result2 = sorter.sort(listWithZero);
+        System.out.println("Initialising Test Nr 2");
         for (int x : result2) {
             System.out.print(x + ", ");
         }
@@ -60,6 +65,7 @@ public class SortTest {
         //Expected result = {-100,-55,-5,2,4,100};
         int[] expected1 = {-100, -55, -5, 2, 4, 100};
         int[] result1 = sorter.sort(array1);
+        System.out.println("Initialising Test Nr1");
         for (int x : result1) {
             System.out.print(x + ", ");
         }
