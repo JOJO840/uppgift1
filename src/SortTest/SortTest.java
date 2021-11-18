@@ -14,11 +14,27 @@ public class SortTest {
         int[] listWithZero = {4, -5, 6, 222, -98, 0};
         testSorterWithZeroes(sorter, listWithZero);
 
+        int[] listWithSameElements = {-1,-1,-1,-1,-1};
+        testSorterWithSameElements(sorter, listWithSameElements);
+    }
 
-
-
-
-
+    private static void testSorterWithSameElements(Sorter sorter, int[] listWithSameElements) {
+            //Expected Results = {-1,-1,-1,-1,-1};
+        int[] expected3 = {-1,-1,-1,-1,-1};
+        int[] result3 = sorter.sort(listWithSameElements);
+        for (int j : result3) {
+            System.out.print(j + ", ");
+        }
+        System.out.println("");
+        for (int x : expected3) {
+            System.out.println(x + ", ");
+        }
+        System.out.println("");
+        if(Arrays.equals(result3,expected3)){
+            System.out.println("OK");
+        } else {
+            System.out.println("Error expected arraylist " + Arrays.toString(expected3) + " " + "You got " + Arrays.toString(result3));
+        }
     }
 
     private static void testSorterWithZeroes(Sorter sorter, int[] listWithZero) {
