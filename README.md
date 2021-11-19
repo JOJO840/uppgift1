@@ -1,6 +1,6 @@
 # ArraySorter 
 ## Info
-This is program in Java that will run an Array List with Integers and sort in proper order.
+This is a program in Java that will run an Array List with Integers and sort in proper order.
 There is 2 tests here, the First program "ARGS" is sorting the integers, the Second test is testing 5 different outcomes of arraylists of Integers.
 You have will 3 files to work with.
 
