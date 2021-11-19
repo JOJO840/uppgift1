@@ -6,7 +6,7 @@ You have will 3 files to work with.
 
 ## First Program "ARGS"
 ### Steps.
-1. First step is to clone the repo "git clone https://github.com/JOJO840/uppgift1/edit/main/README.md in the terminal.
+1. First step is to clone the repo "git clone https://github.com/JOJO840/uppgift1/" in the terminal.
 2. You will see a package called "src" go in here and you will see 2 other packages.
 3. Enter the Sorter package, here is 2 files named SortMain and Sorter.
 4. Open up the SortMain file, in here you will have to enter the array arguments "args" in the configurations.
